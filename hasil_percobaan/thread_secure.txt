@@ -1,0 +1,310 @@
+# 10
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 10 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      10
+Time taken for tests:   75.562 seconds
+Complete requests:      1000
+Failed requests:        941
+   (Connect: 0, Receive: 0, Length: 628, Exceptions: 313)
+Total transferred:      59943 bytes
+HTML transferred:       8294 bytes
+Requests per second:    13.23 [#/sec] (mean)
+Time per request:       755.624 [ms] (mean)
+Time per request:       75.562 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  510 1783.2      0   32285
+Processing:     0  170 380.6    130    7345
+Waiting:        0  278 131.4    286     695
+Total:          0  680 1859.4    151   32552
+
+Percentage of the requests served within a certain time (ms)
+  50%    151
+  66%    350
+  75%    665
+  80%    803
+  90%   1604
+  95%   3191
+  98%   7584
+  99%   7993
+ 100%  32552 (longest request)
+
+
+
+
+
+# 50
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 50 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      50
+Time taken for tests:   74.509 seconds
+Complete requests:      1000
+Failed requests:        933
+   (Connect: 0, Receive: 0, Length: 623, Exceptions: 310)
+Total transferred:      60102 bytes
+HTML transferred:       8316 bytes
+Requests per second:    13.42 [#/sec] (mean)
+Time per request:       3725.449 [ms] (mean)
+Time per request:       74.509 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.79 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  882 3756.8      0   55380
+Processing:     0  291 1514.8    157   38510
+Waiting:        0  319 148.7    341    1060
+Total:          0 1173 4073.8    187   55799
+
+Percentage of the requests served within a certain time (ms)
+  50%    187
+  66%    489
+  75%    776
+  80%    969
+  90%   2060
+  95%   4045
+  98%   9660
+  99%  16303
+ 100%  55799 (longest request)
+
+
+
+
+
+# 100
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 100 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      100
+Time taken for tests:   79.235 seconds
+Complete requests:      1000
+Failed requests:        944
+   (Connect: 0, Receive: 0, Length: 630, Exceptions: 314)
+Total transferred:      59943 bytes
+HTML transferred:       8294 bytes
+Requests per second:    12.62 [#/sec] (mean)
+Time per request:       7923.505 [ms] (mean)
+Time per request:       79.235 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  809 3597.4      0   57983
+Processing:     0  232 2139.9     99   65664
+Waiting:        0  233 116.4    222     640
+Total:          0 1041 4207.0    109   65664
+
+Percentage of the requests served within a certain time (ms)
+  50%    109
+  66%    420
+  75%    712
+  80%    933
+  90%   1951
+  95%   3796
+  98%   7975
+  99%  16281
+ 100%  65664 (longest request)
+
+
+
+
+
+# 150
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 150 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      150
+Time taken for tests:   85.398 seconds
+Complete requests:      1000
+Failed requests:        974
+   (Connect: 0, Receive: 0, Length: 650, Exceptions: 324)
+Total transferred:      60102 bytes
+HTML transferred:       8316 bytes
+Requests per second:    11.71 [#/sec] (mean)
+Time per request:       12809.729 [ms] (mean)
+Time per request:       85.398 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1053 3788.1      0   56752
+Processing:     0  423 2164.5    205   31991
+Waiting:        0  319 169.7    313     724
+Total:          0 1477 4337.8    398   57087
+
+Percentage of the requests served within a certain time (ms)
+  50%    398
+  66%    606
+  75%    813
+  80%   1183
+  90%   3547
+  95%   7604
+  98%  16076
+  99%  31935
+ 100%  57087 (longest request)
+
+
+
+
+
+# 200
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 200 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      200
+Time taken for tests:   78.644 seconds
+Complete requests:      1000
+Failed requests:        954
+   (Connect: 0, Receive: 0, Length: 637, Exceptions: 317)
+Total transferred:      59943 bytes
+HTML transferred:       8294 bytes
+Requests per second:    12.72 [#/sec] (mean)
+Time per request:       15728.884 [ms] (mean)
+Time per request:       78.644 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1084 3726.2      0   61460
+Processing:     0  590 3647.2    244   65946
+Waiting:        0  300 151.0    292     681
+Total:          0 1673 5155.4    431   65946
+
+Percentage of the requests served within a certain time (ms)
+  50%    431
+  66%    709
+  75%    881
+  80%   1555
+  90%   3670
+  95%   7970
+  98%  16018
+  99%  32153
+ 100%  65946 (longest request)

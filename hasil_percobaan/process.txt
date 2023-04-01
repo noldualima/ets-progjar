@@ -1,0 +1,299 @@
+# 10
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 10 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      10
+Time taken for tests:   28.452 seconds
+Complete requests:      1000
+Failed requests:        1558
+   (Connect: 0, Receive: 623, Length: 623, Exceptions: 312)
+Total transferred:      60261 bytes
+HTML transferred:       8338 bytes
+Requests per second:    35.15 [#/sec] (mean)
+Time per request:       284.517 [ms] (mean)
+Time per request:       28.452 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   72 314.6      0    3046
+Processing:     0  203 394.1      0    2039
+Waiting:        0  196 383.4      0    2038
+Total:          0  275 584.1      0    4602
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%     88
+  75%    226
+  80%    350
+  90%   1138
+  95%   1511
+  98%   2212
+  99%   2760
+ 100%   4602 (longest request)
+
+
+
+
+
+# 50
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 50 -n 1000 -s 9999 -r http://localhost:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      50
+Time taken for tests:   27.843 seconds
+Complete requests:      1000
+Failed requests:        1576
+   (Connect: 0, Receive: 623, Length: 623, Exceptions: 330)
+Total transferred:      60261 bytes
+HTML transferred:       8338 bytes
+Requests per second:    35.92 [#/sec] (mean)
+Time per request:       1392.141 [ms] (mean)
+Time per request:       27.843 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  230 751.3      0    7302
+Processing:     0 1103 4587.0      1   26820
+Waiting:        0  265 649.3      0   14064
+Total:          0 1333 4807.1      1   27824
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%    277
+  75%    639
+  80%   1023
+  90%   1899
+  95%   4127
+  98%  27820
+  99%  27822
+ 100%  27824 (longest request)
+
+
+
+
+
+# 100
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 100 -n 1000 -s 9999 -r http://localhost:8889/testing.txtThis is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      100
+Time taken for tests:   15.913 seconds
+Complete requests:      1000
+Failed requests:        1554
+   (Connect: 0, Receive: 621, Length: 622, Exceptions: 311)
+Total transferred:      60102 bytes
+HTML transferred:       8316 bytes
+Requests per second:    62.84 [#/sec] (mean)
+Time per request:       1591.298 [ms] (mean)
+Time per request:       15.913 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  150 561.4      0    7158
+Processing:     0  125 264.5      0    3920
+Waiting:        0  123 260.3      0    3866
+Total:          0  275 701.3      0    7405
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%     75
+  75%    246
+  80%    317
+  90%    831
+  95%   1398
+  98%   3293
+  99%   3419
+ 100%   7405 (longest request)
+ 
+ 
+ 
+ 
+ 
+# 150
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 150 -n 1000 -s 9999 -r http://localhost:8889/testing.txt 
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      150
+Time taken for tests:   21.463 seconds
+Complete requests:      1000
+Failed requests:        1563
+   (Connect: 0, Receive: 625, Length: 625, Exceptions: 313)
+Total transferred:      60102 bytes
+HTML transferred:       8316 bytes
+Requests per second:    46.59 [#/sec] (mean)
+Time per request:       3219.379 [ms] (mean)
+Time per request:       21.463 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.73 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  277 1189.9      0   15405
+Processing:     0  207 510.3      0    8103
+Waiting:        0  202 505.6      0    8099
+Total:          0  485 1409.7      0   16175
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%    101
+  75%    252
+  80%    505
+  90%   1399
+  95%   2424
+  98%   4929
+  99%   7745
+ 100%  16175 (longest request)
+
+
+
+
+
+# 200
+lf@LF:~/Dokumen/Progjar/ets$ ab -c 200 -n 1000 -s 9999 -r http://localhost:8889/testing.txt 
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      200
+Time taken for tests:   33.740 seconds
+Complete requests:      1000
+Failed requests:        1558
+   (Connect: 0, Receive: 623, Length: 623, Exceptions: 312)
+Total transferred:      60102 bytes
+HTML transferred:       8316 bytes
+Requests per second:    29.64 [#/sec] (mean)
+Time per request:       6748.013 [ms] (mean)
+Time per request:       33.740 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  511 2220.5      0   31585
+Processing:     0  335 1027.9      0   16205
+Waiting:        0  329 1021.8      0   16201
+Total:          0  846 2816.3      0   32282
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%     69
+  75%    557
+  80%    940
+  90%   1900
+  95%   3902
+  98%   8258
+  99%  16484
+ 100%  32282 (longest request)
